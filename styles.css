@@ -14,8 +14,18 @@ body {
     padding: 0;
 }
 
+header {
+    padding: 20px;
+}
+
 .logo {
     font-size: 26px;
+    display: flex;
+    align-items: center;
+}
+
+.web {
+    color: #2196F3;
 }
 
 nav > ul {
@@ -45,10 +55,6 @@ a:hover {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-}
-
-.logo > span {
-    color: #2196F3;
 }
 
 a {
@@ -83,6 +89,7 @@ a {
 }
 
 h1 {
+
     font-size: 44px;
     color: var(--h1-color);
     text-transform: uppercase;
@@ -121,7 +128,7 @@ h1 {
     cursor: default;
 }
 
-.company > .container {
+.infos {
     display: flex;
     align-items: center;
     margin-top: 100px;
@@ -177,7 +184,7 @@ h1 {
     margin-bottom: 50px;
 }
 
-.work > .container {
+.imgs-work {
     display: flex;
     align-items: center;
 }
