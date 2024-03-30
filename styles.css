@@ -98,7 +98,7 @@ h1 {
 .first {
     text-align: center;
     padding: 200px;
-    background-image: url(./Images/Img\ Overlay.png);
+    background-image: url(./Images/background.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
