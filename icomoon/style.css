@@ -73,12 +73,12 @@ Single-colored icons can be modified like so:
   justify-content: center;
   width: 44px;
   height: 44px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-port:hover {
   background-color: #2196F3;
   border-radius: 50%;
-  transition: 0.5s;
   cursor: pointer;
 }
 
@@ -133,66 +133,66 @@ Single-colored icons can be modified like so:
   fill: #AFB1B8;
   width: 41px;
   height: 38.81px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client:hover .icon-union {
   fill: #2196F3;
-  transition: all 0.5s ease;
 }
 
 .icon-company {
   fill: #AFB1B8;
   width: 40px;
   height: 52px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client:hover .icon-company {
   fill: #2196F3;
-  transition: all 0.5s ease;
 } 
 
 .icon-apple {
   fill: #AFB1B8;
   width: 43.46px;
   height: 41.18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client:hover .icon-apple {
   fill: #2196F3;
-  transition: all 0.5s ease;
 } 
 
 .icon-foster {
   fill: #AFB1B8;
   width: 84.44px;
   height: 40.62px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client:hover .icon-foster {
   fill: #2196F3;
-  transition: all 0.5s ease;
 }
 
 .icon-brand {
   fill: #AFB1B8;
   width: 62.54px;
   height: 45.43px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client:hover .icon-brand {
   fill: #2196F3;
-  transition: all 0.5s ease;
 }
 
 .icon-box {
   fill: #AFB1B8;
   width: 93.79px;
   height: 43.93px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client:hover .icon-box {
   fill: #2196F3;
-  transition: all 0.5s ease;
 }
 
 .icon-instagram-footer {
@@ -225,6 +225,7 @@ Single-colored icons can be modified like so:
   background-color: rgba(255, 255, 255, 0.1);
   padding: 12px 12px 12px 12px;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-footer:hover {

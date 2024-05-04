@@ -15,7 +15,14 @@ body {
 }
 
 header {
-    padding: 20px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -30,25 +37,22 @@ header {
 
 nav > ul {
     display: flex;
+    gap: 35px;
+    margin: 0px;
 }
 
 li {
     list-style: none;
-    margin-left: 35px;
 }
 
-li:hover {
-    color: #2196F3;
-    border: solid;
-    border-right: none;
-    border-left: none;
-    border-top: none;
-    border-radius: 3px;
+li > a {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-a:hover {
+li > a:hover {
     color: #2196F3;
-    border: 2px;
+    border-bottom: 2px solid #2196F3;
+    padding-bottom: 35px;
 }
 
 .logo {
@@ -74,12 +78,11 @@ a {
     align-items: center;
     gap: 10px;
     color: var(--smoky-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.link:hover {
+    color: #2196F3;
 }
 
 .logo-nav {
@@ -229,9 +232,11 @@ h1 {
     text-align: center;
 }
 
-#command {
-    text-align: center;
-}
+.command-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
 
 .card {
     background: #FFF;
@@ -270,7 +275,6 @@ h1 {
 
 
 #clients {
-    text-align: center;
     font-size: 36px;
     letter-spacing: 1.08px;
     margin: 0px 0px 50px 0px;
@@ -290,6 +294,7 @@ h1 {
     border-radius: 4px;
     width: 170px;
     height: 92px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #foster {
@@ -374,6 +379,9 @@ address {
 }
 
 .clients-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 94px;
     padding-bottom: 94px;
 }
