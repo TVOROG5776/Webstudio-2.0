@@ -1,0 +1,38 @@
+.work {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        &__title {
+            font-size: 36px;
+            font-weight: 700;
+        }
+        .imgs-work {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            .imgwork {
+                position: relative;
+                margin: 0px;
+                &__descrip {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    background-color: rgba(47, 48, 58, 0.80);
+                    padding: 27px 95px 27px 95px;
+                    color: white;
+                    font-size: 14px;
+                    font-family: 'Roboto', sans-serif;
+                    text-transform: uppercase;
+                }
+            }
+            
+        }
+    }
+}
+
