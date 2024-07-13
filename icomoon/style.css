@@ -20,6 +20,13 @@ Single-colored icons can be modified like so:
   height: 70px;
 }
 
+@media (max-width) {
+  .icon-group {
+    width: 354px;
+    height: 120px;
+  }
+}
+
 .icon-clock {
   width: 65.32px;
   height: 70px;
@@ -60,11 +67,13 @@ Single-colored icons can be modified like so:
 }
 
 .icon-envelope {
-  width: 1.3330078125em;
+  width: 16px;
+  height: 12px;
 }
 
 .icon-smartphone {
-  width: 0.625em;
+  width: 10px;
+  height: 16px;
 }
 
 .link-port {

@@ -1,19 +1,22 @@
+@import '../../mixins';
+
 .work {
     padding-top: 100px;
     padding-bottom: 100px;
+    @media (max-width: 1200px) {
+        & {
+            display: none
+        }
+    }
     &-content {
-        display: flex;
+        @include flex (flex, center, center, wrap);
         flex-direction: column;
-        align-items: center;
         gap: 50px;
         &__title {
-            font-size: 36px;
-            font-weight: 700;
+            @include text (#212121, 'Roboto', 36px, normal, 700, normal, 1.08px);
         }
         .imgs-work {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex (flex, center, center, wrap);
             gap: 30px;
             .imgwork {
                 position: relative;
@@ -25,10 +28,8 @@
                     left: 0;
                     background-color: rgba(47, 48, 58, 0.80);
                     padding: 27px 95px 27px 95px;
-                    color: white;
-                    font-size: 14px;
-                    font-family: 'Roboto', sans-serif;
                     text-transform: uppercase;
+                    @include text (white, 'Roboto', 14px, normal, 700, normal, 0.42px);
                 }
             }
             

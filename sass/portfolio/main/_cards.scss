@@ -1,13 +1,19 @@
-.cards {
-    padding-top: 50px;
-    padding-bottom: 95px;
-    &-content {
+.cards--portfolio {
+    .cards-content--portfolio {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         gap: 24px;
-        .card {
+        padding-top: 50px;
+        padding-bottom: 95px;
+        @media (max-width: 1200px) {
+            & {
+                padding-bottom: 60px;
+                padding-top: 40px;
+            }
+        }
+        .card--portfolio {
             border: 1px solid #EEE;
             background: #FFF;
             position: relative;
@@ -17,14 +23,22 @@
             &:hover {
                 box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
             }
-            &--overlay {
+            .card--overlay {
                 position: relative;
                 overflow: hidden;
                 &__img {
                     position: relative;
                     z-index: 1;
+                    width: 370px;
+                    height: 294px;
+                    @media (max-width: 1200px) {
+                        & {
+                            width: 450px;
+                            height: 294px
+                        }
+                    }
                 }
-                &__drop-menu {
+                .card--overlay__drop-menu {
                     color: #fff;
                     font-family: 'Roboto';
                     font-size: 18px;
@@ -49,7 +63,7 @@
                     }
                 }
             }
-            &--content {
+            .card--content {
                 display: flex;
                 flex-direction: column;
                 gap: 4px;
@@ -71,13 +85,13 @@
                     font-family: 'Roboto', sans-serif;
                     font-size: 16px;
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 400;
                     line-height: 30px; /* 187.5% */
                     letter-spacing: 0.48px;
                 }
             }
         }
-        .card:focus .card--overlay__drop-menu {
+        .card--portfolio:focus .card--overlay__drop-menu {
             transform: translateY(0);
             cursor: pointer;
         }

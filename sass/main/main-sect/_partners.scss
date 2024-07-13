@@ -1,45 +1,57 @@
+@import '../../mixins';
+
 .partners {
     padding-top: 50px;
     padding-bottom: 50px;
+    @media (max-width: 1200px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
     &-content {
-        display: flex;
+        @include flex (flex, center, center, wrap);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         gap: 30px;
         &__title {
-            font-size: 36px;
-            letter-spacing: 1.08px;
+            @include text (#212121, 'Roboto', 36px, normal, 700, normal, 1.08px);
+            @media (max-width: 1200px) {
+                & {
+                    color: #212121;
+                    font-family: 'Roboto';
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.84px;
+                }
+            }
             margin: 0px 0px 50px 0px;
         }
         .clients {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
+            @include flex (flex, flex-start, center, wrap);
             gap: 30px;
             .client {
-                display: flex;
-                justify-content: center;
+                @include flex (flex, center, center, wrap);
                 border: 1px solid #AFB1B8;
                 border-radius: 4px;
                 width: 170px;
                 height: 92px;
+                @media (max-width: 1200px) {
+                    & {
+                        width: 210px;
+                        height: 92px;
+                    }
+                }
                 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
                 &:hover {
                     border-color: #2196F3;
                     cursor: pointer;
                 }
                 #foster {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex (flex, center, center, wrap);
                     #foster > h6 {
                         margin-top: 50px;
                     }
                 }
-            }
-            .client > svg {
-                margin-top: 20px;
             }
         }
     }

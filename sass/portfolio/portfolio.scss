@@ -18,3 +18,9 @@ body {
     padding: 0px 15px;
     margin: 0px auto;
 }
+
+@media (max-width: 1200px) {
+    .container {
+        width: 480px;
+    }
+}

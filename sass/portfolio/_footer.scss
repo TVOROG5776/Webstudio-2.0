@@ -1,15 +1,24 @@
-.footer {
+.footer--portfolio {
     background-color: #212121;
     padding-top: 60px;
     padding-bottom: 60px;
-    &-content {
+    .footer-content--portfolio {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 60px;
         .logo-list {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            @media (max-width: 1200px) {
+                & {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+            }
             gap: 20px;
             &--footer {
                 display: flex;
@@ -18,13 +27,13 @@
                     color: #2196F3;
                     font-family: 'Raleway', sans-serif;
                     font-size: 26px;
-                    font-weight: 900;
+                    font-weight: 700;
                     letter-spacing: 3%;
                 }
                 &__webstudio {
                     font-family: 'Raleway', sans-serif;
                     font-size: 26px;
-                    font-weight: 900;
+                    font-weight: 700;
                     letter-spacing: 3%;
                     color: white;
                 }
@@ -35,12 +44,20 @@
                 align-items: flex-start;
                 gap: 10px;
                 font-style: normal;
+                @media (max-width: 1200px) {
+                    & {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                    }
+                }
                 .adress__bulvar {
                     color: #FFF;
                     font-family: 'Roboto', sans-serif;
                     font-size: 14px;
                     font-style: normal;
-                    font-weight: 500;
+                    font-weight: 400;
                     line-height: 24px; /* 171.429% */
                     letter-spacing: 0.42px;
                     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -57,7 +74,7 @@
                         font-family: 'Roboto', sans-serif;
                         font-size: 14px;
                         font-style: normal;
-                        font-weight: 500;
+                        font-weight: 400;
                         line-height: 24px; /* 171.429% */
                         letter-spacing: 0.42px;
                         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -69,12 +86,20 @@
                 }
             }
         }
-        .links-content {
+        .links-content--portfolio {
             display: flex;
             flex-direction: column;
+            @media (max-width: 1200px) {
+                & {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+            }
             padding-top: 10px;
             gap: 20px;
-            &__title {
+            .links-content__title--portfolio {
                 color: #FFF;
                 font-family: 'Roboto';
                 font-size: 14px;
@@ -85,11 +110,11 @@
                 text-transform: uppercase;
                 margin: 0px;
             }
-            .links-soc {
+            .links-soc--portfolio {
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                .link-soc {
+                .link-soc--portfolio {
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -104,12 +129,20 @@
                 }
             }
         }
-        .form-content {
+        .form-content--portfolio {
             display: flex;
             flex-direction: column;
             padding-top: 10px;
+            @media (max-width: 1200px) {
+                & {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+            }
             gap: 20px;
-            &__title {
+            .form-content__title--portfolio {
                 color: #FFF;
                 font-family: 'Roboto';
                 font-size: 14px;
@@ -120,12 +153,20 @@
                 text-transform: uppercase;
                 margin: 0px;
             }
-            .form {
+            .form--portfolio {
                 display: flex;
                 align-items: center;
+                @media (max-width: 1200px) {
+                    & {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                    }
+                }
                 gap: 12px;
-                &__input-title {
-                    .form__input {
+                .form__input-title--portfolio {
+                    .form__input--portfolio {
                         outline: none;
                         color: rgba(255, 255, 255, 0.60);
                         font-family: 'Roboto';
@@ -154,7 +195,7 @@
                         }
                     }
                 }
-                &__button {
+                .button-send--portfolio {
                     display: flex;
                     align-items: center;
                     color: #FFF;
@@ -176,12 +217,12 @@
                         color: black;
                     }
 
-                    .form__button--img {
+                    .button-send--img {
                         fill: white;
                         transition: fill 0.3s ease;
                     }
 
-                    &:hover .form__button--img {
+                    &:hover .button-send--img {
                         fill: black;
                     }
                 }

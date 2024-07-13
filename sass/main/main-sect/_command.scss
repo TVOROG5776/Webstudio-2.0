@@ -1,45 +1,69 @@
+@import '../../mixins';
+
 .command {
     background-color: #F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px;
+    @media (max-width: 1200px) {
+        & {
+            padding-top: 60px;
+            padding-bottom: 60px
+        }
+    }
     &-content {
-        display: flex;
+        @include flex (flex, center, center, wrap);
         flex-direction: column;
-        align-items: center;
         &__title {
-            font-size: 36px;
-            font-weight: 700;
+            @include text (#212121, 'Roboto', 36px, normal, 700, normal, 1.08px);
+            @media (max-width: 1200px) {
+                & {
+                    color: #212121;
+                    font-family: 'Roboto';
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.84px;
+                }
+            }
         }
         .cards {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex (flex, center, center, wrap);
             gap: 30px;
             padding-top: 50px;
+            @media (max-width: 1200px) {
+                & {
+                    padding-top: 30px
+                }
+            }
             .card {
-                display: flex;
+                @include flex (flex, center, center, wrap);
                 flex-direction: column;
-                align-items: center;
                 background: #FFF;
                 border-radius: 0px 0px 4px 4px;
                 padding-bottom: 30px;
                 box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+                &__img {
+                    width: 270px;
+                    height: 260px;
+                    @media (max-width: 1200px) {
+                        & {
+                            width: 450px;
+                            height: 460px;
+                        }
+                    }
+                }
                 &__title {
-                    color: #212121;
-                    font-size: 16px;
-                    font-weight: 600;
+                    @include text (#212121, 'Roboto', 16px, normal, 500, normal, 0.48px);
                     margin: 30px 0px 10px 0px;
                 }
                 &__descrip {
-                    font-size: 16px;
-                    font-weight: 400;
-                    color: var(--smoky-color);
+                    @include text (getColor('smoky-color'), 'Roboto', 16px, normal, 400, normal, 00.48px);
                     margin: 0px 0px 16px 0px;
                 }
+                
                 .links-port {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex (flex, center, center, wrap);
                     gap: 10px;
                 }
             }

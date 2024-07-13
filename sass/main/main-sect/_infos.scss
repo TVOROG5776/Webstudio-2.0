@@ -1,38 +1,52 @@
+@import '../../mixins';
+
 .company {
     .company-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex (flex, center, center, wrap);
         padding-top: 100px;
-        gap: 19px;
+        gap: 30px;
+        @media (max-width: 1200px) {
+            & {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+        }
         .info {
             display: flex;
             flex-direction: column;
-            height: 248px;
+            @media (max-width: 1200px) {
+                & {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center
+            }
+        }
             .svg {
-                display: flex;
-                justify-content: center;
+                @include flex (flex, center, center, wrap);
                 background-color: #F5F4FA;
                 border-radius: 4px;
-                padding: 25px 105px 25px 105px;
-                width: 270px;
-            }
+                padding: 25px 100px 25px 100px;
+                @media (max-width: 1200px) {
+                    & {
+                        padding: 25px 190px 25px 190px;
+                    }
+                }
+                }
             &__title {
-                font-weight: 700;
+                @include text (#212121, 'Roboto', 14px, normal, 700, normal, 0.42px);
                 text-transform: uppercase;
-                font-weight: 700;
-                font-size: 14px;
-                font-family: 'Roboto', sans-serif;
                 margin: 30px 0px 10px 0px;
             }
             &__description {
-                color: var(--smoky-color);
-                line-height: 24px;
-                font-family: 'Roboto', sans-serif;
-                font-size: 14px;
-                font-weight: 600;
-                width: 270px;
+                @include text (getColor('smoky-color'), 'Roboto', 14px, normal, 400, 24px, 0.42px);
+                @include text-size (72px, 270px);
+                @media (max-width: 1200px) {
+                    & {
+                        width: 450px;
+                    }
+                }
             }
         }
     }
 }
+

@@ -1,2 +1,10 @@
 @import './main/main.scss';
-@import './portfolio/portfolio.scss'
+@import './portfolio/portfolio.scss';
+@import './colors';
+@import './mixins';
+
+@media (max-width: 1200px) {
+    .container {
+        width: 480px;
+    }
+}
