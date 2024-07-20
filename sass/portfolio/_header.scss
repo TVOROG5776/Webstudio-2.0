@@ -23,6 +23,11 @@
                         display: none;
                     }
                 } 
+                @media (max-width: 480px) {
+                    & {
+                        display: none;
+                    }
+                } 
                 gap: 50px;
                 .nav-bar__item--portfolio {
                     position: relative;
@@ -57,7 +62,7 @@
         }
         .header-links {
             display: flex;
-            @media (max-width: 1200px) {
+            @media (max-width: 480px) {
                 & {
                     display: none;
                 }
@@ -85,7 +90,7 @@
         }
         .adaptive-link--portfolio {
             display: none; 
-            @media (max-width: 1200px) {
+            @media (max-width: 480px) {
                 & {
                     display: block;
                 }
@@ -97,4 +102,3 @@
 a {
     text-decoration: none;
 }
-

@@ -19,8 +19,12 @@ body {
     margin: 0px auto;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 480px) {
     .container {
         width: 480px;
     }
+}
+
+html {
+    scroll-behavior: smooth;
 }

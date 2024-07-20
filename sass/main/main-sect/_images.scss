@@ -8,6 +8,11 @@
             display: none
         }
     }
+    @media (max-width: 480px) {
+        & {
+            display: none
+        }
+    }
     &-content {
         @include flex (flex, center, center, wrap);
         flex-direction: column;

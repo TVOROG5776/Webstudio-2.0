@@ -7,10 +7,25 @@
         padding-top: 60px;
         padding-bottom: 60px;
     }
+    @media (max-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        width: 320px;
+    }
     &-content {
         @include flex (flex, center, center, wrap);
         flex-direction: column;
-        gap: 30px;
+        gap: 50px;
+        @media (max-width: 1200px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            gap: 30px;
+        }
+        @media (max-width: 480px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            gap: 30px;
+        }
         &__title {
             @include text (#212121, 'Roboto', 36px, normal, 700, normal, 1.08px);
             @media (max-width: 1200px) {
@@ -24,7 +39,17 @@
                     letter-spacing: 0.84px;
                 }
             }
-            margin: 0px 0px 50px 0px;
+            @media (max-width: 480px) {
+                & {
+                    color: #212121;
+                    font-family: 'Roboto';
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.84px;
+                }
+            }
         }
         .clients {
             @include flex (flex, flex-start, center, wrap);
@@ -35,7 +60,7 @@
                 border-radius: 4px;
                 width: 170px;
                 height: 92px;
-                @media (max-width: 1200px) {
+                @media (max-width: 480px) {
                     & {
                         width: 210px;
                         height: 92px;

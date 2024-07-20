@@ -2,11 +2,16 @@
 @import '../mixins';
 
 .header {
+    @media (max-width: 480px) {
+        & {
+            width: 320px;
+        }
+    }
     .header-content {
         @include flex (flex, center, space-between, wrap);
         padding-bottom: 32px;
         padding-top: 32px;
-        @media (max-width: 1200px) {
+        @media (max-width: 480px) {
             display: flex;
             align-items: center;
             flex-wrap: wrap;
@@ -68,9 +73,18 @@
             gap: 30px;
             @media (max-width: 1200px) {
                 & {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 10px;
+                }
+            }
+            @media (max-width: 768px) {
+                & {
                     display: none;
                 }
             }
+
             .link {
                 @include text (map-get($map: $colors, $key: "smoky-color"), 'Roboto', 14px, normal, 500, normal, 0.28px);
                 display: flex;
@@ -85,19 +99,16 @@
         }
         .adaptive--link {
             display: none;
-            &__item {
-                display: none;
-                @media (max-width: 1200px) {
-                    display: block;
-                }
+            @media (max-width: 768px) {
+                &{display: block;}
+                
             }
         }
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
     .nav {
         display: none;
     }
-
 }
