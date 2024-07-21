@@ -71,7 +71,8 @@
                     }
                 }
                 &__img {
-                    
+                    width: 270px;
+                    height: 260px;
                     @media (max-width: 480px) {
                         & {
                             width: 100%;
