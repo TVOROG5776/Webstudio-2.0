@@ -1,15 +1,16 @@
 @import '../../mixins';
 
 .company {
-    @media (max-width: 480px) {
-        & {
-            width: 320px;
-        }
-    }
     .company-content {
         @include flex (flex, center, center, wrap);
         padding-top: 100px;
         gap: 30px;
+        @media (max-width: 768px) {
+            & {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+        }
         @media (max-width: 480px) {
             & {
                 padding-top: 60px;
@@ -32,6 +33,14 @@
                     flex-direction: column;
                     align-items: flex-start;
             }
+            @media (max-width: 768px) {
+                & {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 320px;
+            }
+        }
             @media (max-width: 480px) {
                 & {
                     display: flex;

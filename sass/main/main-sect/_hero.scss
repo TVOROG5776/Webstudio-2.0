@@ -6,7 +6,7 @@
   }
 
 .hero {
-    background: url(../../../Images/background.png) no-repeat center / cover;
+    background: url(/Images/background.png) no-repeat center / cover;
     padding-top: 200px;
     padding-bottom: 200px;
     &-content {
@@ -65,11 +65,40 @@
     }
 }
 
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .hero-content__title {
+        color: #FFF;
+        text-align: center;
+        font-family: 'Roboto';
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 42px; /* 161.538% */
+        letter-spacing: 1.56px;
+        text-transform: uppercase;
+    }
+    .hero-content__button {
+        padding: 10px 25px 10px 25px;
+        color: #FFF;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px; /* 187.5% */
+        letter-spacing: 0.96px;
+    }
+}
+
+
+
 @media (max-width: 480px) {
     .hero {
         padding-top: 120px;
         padding-bottom: 120px;
-        width: 320px;
     }
     .hero-content__title {
         width: 320px;

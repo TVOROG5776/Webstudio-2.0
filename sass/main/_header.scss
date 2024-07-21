@@ -2,11 +2,6 @@
 @import '../mixins';
 
 .header {
-    @media (max-width: 480px) {
-        & {
-            width: 320px;
-        }
-    }
     .header-content {
         @include flex (flex, center, space-between, wrap);
         padding-bottom: 32px;
@@ -16,6 +11,7 @@
             align-items: center;
             flex-wrap: wrap;
             justify-content: space-between;
+            width: 320px;
         }
         .logo-nav {
             display: flex;

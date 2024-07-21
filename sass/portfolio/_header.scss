@@ -18,7 +18,7 @@
             }
             .nav-bar--portfolio {
                 @include flex (flex, center, center, nowrap);
-                @media (max-width: 1200px) {
+                @media (max-width: 768px) {
                     & {
                         display: none;
                     }
@@ -27,7 +27,7 @@
                     & {
                         display: none;
                     }
-                } 
+                }
                 gap: 50px;
                 .nav-bar__item--portfolio {
                     position: relative;
@@ -62,6 +62,19 @@
         }
         .header-links {
             display: flex;
+            @media (max-width: 1200px) {
+                & {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 10px;
+                }
+            } 
+            @media (max-width: 768px) {
+                & {
+                    display: none;
+                }
+            } 
             @media (max-width: 480px) {
                 & {
                     display: none;
@@ -90,6 +103,11 @@
         }
         .adaptive-link--portfolio {
             display: none; 
+            @media (max-width: 768px) {
+                & {
+                    display: block;
+                }
+            } 
             @media (max-width: 480px) {
                 & {
                     display: block;

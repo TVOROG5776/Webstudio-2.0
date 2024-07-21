@@ -10,7 +10,6 @@
     @media (max-width: 480px) {
         padding-top: 60px;
         padding-bottom: 60px;
-        width: 320px;
     }
     &-content {
         @include flex (flex, center, center, wrap);

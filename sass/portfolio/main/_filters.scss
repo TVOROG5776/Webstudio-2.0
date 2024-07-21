@@ -4,12 +4,20 @@
         justify-content: center;
         gap: 8px;
         padding-top: 94px;
+        @media (max-width: 768px) {
+            & {
+                display: flex;
+                flex-wrap: wrap;
+                padding-top: 60px;
+                width: 320px;
+            }
+        }
         @media (max-width: 480px) {
             & {
                 display: flex;
                 flex-wrap: wrap;
                 padding-top: 60px;
-                width: 326px;
+                width: 320px;
             }
         }
         .filter {

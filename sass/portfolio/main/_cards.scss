@@ -1,7 +1,7 @@
 .cards--portfolio {
     .cards-content--portfolio {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
         gap: 24px;
@@ -31,10 +31,21 @@
                     z-index: 1;
                     width: 370px;
                     height: 294px;
+                    @media (max-width: 1200px) {
+                        & {
+                            width: 354px;
+                            height: 294px;
+                        }
+                    }
+                    @media (max-width: 768px) {
+                        & {
+                            width: 354px;
+                            height: 294px;
+                        }
+                    }
                     @media (max-width: 480px) {
                         & {
-                            width: 450px;
-                            height: 294px
+                            width: 320px;
                         }
                     }
                 }

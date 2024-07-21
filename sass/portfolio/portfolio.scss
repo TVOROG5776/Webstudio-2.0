@@ -19,9 +19,21 @@ body {
     margin: 0px auto;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
     .container {
         width: 480px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 320px;
     }
 }
 
