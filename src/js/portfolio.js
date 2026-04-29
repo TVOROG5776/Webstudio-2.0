@@ -1,3 +1,18 @@
+const btnOpenBurgerMenu = document.querySelector('.solid_menu');
+const btnCloseBurgerMenu = document.querySelector('.icon-close-burger-menu');
+const burgerMenu = document.querySelector('.burger-menu');
+const btnCloseModal = document.querySelector(
+  'button.icon-close-box.icon-close-box-styles'
+);
+
+btnOpenBurgerMenu.addEventListener('click', () => {
+  burgerMenu.classList.add('is-open');
+});
+
+btnCloseBurgerMenu.addEventListener('click', () => {
+  burgerMenu.classList.remove('is-open');
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   try {
     const animatedElements = document.querySelectorAll('[data-animate]');
