@@ -171,3 +171,98 @@ html {
   border: none;
   background: none;
 }
+
+.animate__animated {
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+}
+
+[data-animate] {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate__fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate__fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(50px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate__fadeInRight {
+  animation-name: fadeInRight;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate__fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v51-cyrillic_latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/raleway-v37-cyrillic_cyrillic-ext_latin_latin-ext_vietnamese-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Oleo Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/oleo-script-v15-latin-regular.woff2') format('woff2');
+}
